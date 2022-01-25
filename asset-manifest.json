@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio2022/static/css/main.d0f8d2f7.css",
+    "main.js": "/portfolio2022/static/js/main.f00ce638.js",
+    "static/media/me.png": "/portfolio2022/static/media/me.8e94d6f2e33682f32570.png",
+    "static/media/Aswathy.png": "/portfolio2022/static/media/Aswathy.fbb6d8fea570f80abae5.png",
+    "static/media/Eldhose.png": "/portfolio2022/static/media/Eldhose.e02ee446f2dd179855b7.png",
+    "static/media/scrollGif.gif": "/portfolio2022/static/media/scrollGif.26c58669ebb0a5fb4dd8.gif",
+    "static/media/freel.png": "/portfolio2022/static/media/freel.74896ed44676233a8b29.png",
+    "static/media/Jackson.jpeg": "/portfolio2022/static/media/Jackson.002b95b7791837f40410.jpeg",
+    "static/media/loc_pin.png": "/portfolio2022/static/media/loc_pin.d5af614bbae3e3c3911f.png",
+    "static/media/atom.png": "/portfolio2022/static/media/atom.ebb56ca47955bdc9fa25.png",
+    "static/media/science.png": "/portfolio2022/static/media/science.419488419ecd74c71f7b.png",
+    "static/media/location.png": "/portfolio2022/static/media/location.606f6d2b292cd32aaa6f.png",
+    "static/media/tcs.png": "/portfolio2022/static/media/tcs.e54a6a64d86d5ba1b905.png",
+    "static/media/html_5.png": "/portfolio2022/static/media/html_5.a92a549a591f4acb527a.png",
+    "static/media/xd.png": "/portfolio2022/static/media/xd.e61b658cb72c3c5aabcf.png",
+    "static/media/keyvalue.png": "/portfolio2022/static/media/keyvalue.cf5aae4041d7e3e8eb57.png",
+    "static/media/grid.png": "/portfolio2022/static/media/grid.f9d7fe6dd4ef826e3957.png",
+    "static/media/figma.png": "/portfolio2022/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/photoshop.png": "/portfolio2022/static/media/photoshop.047cad202c4a70579aa2.png",
+    "static/media/SVLogo.png": "/portfolio2022/static/media/SVLogo.58e64f8bfa41e11c0708.png",
+    "static/media/css.png": "/portfolio2022/static/media/css.6c9fd512b594be488cf9.png",
+    "static/media/typescript.png": "/portfolio2022/static/media/typescript.af108db04a54d784da9b.png",
+    "static/media/illustrator.png": "/portfolio2022/static/media/illustrator.be2c11a35d886eeda681.png",
+    "static/media/indesign.png": "/portfolio2022/static/media/indesign.1efe97b64b1feba167fe.png",
+    "static/media/premiere.png": "/portfolio2022/static/media/premiere.128dd5f3cededb7b3d4e.png",
+    "index.html": "/portfolio2022/index.html",
+    "main.d0f8d2f7.css.map": "/portfolio2022/static/css/main.d0f8d2f7.css.map",
+    "main.f00ce638.js.map": "/portfolio2022/static/js/main.f00ce638.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f8d2f7.css",
+    "static/js/main.f00ce638.js"
+  ]
+}
