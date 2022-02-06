@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Aos from "aos";
-import ReactDOM from "react-dom";
-import Donut from "react-donut";
-
-/////////////////////////////////////////////////////////
-
-import tcs from "../img/icons/tcs.png";
-import freel from "../img/icons/freel.png";
-import keyvalue from "../img/icons/keyvalue.png";
 
 const Container = styled.div`
   width: 100%;

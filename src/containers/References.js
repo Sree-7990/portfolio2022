@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Aos from "aos";
 
-/////////////////////////////////////////////////////////
-
-import Eldhose from "../img/people/Eldhose.png";
-import Jackson from "../img/people/Jackson.jpeg";
-import Aswathy from "../img/people/Aswathy.png";
 
 const Container = styled.div`
   width: 100%;
@@ -165,7 +160,7 @@ const References = (props) => {
           className="ref-wrapper"
         >
           <ReferLogoContainer className="ref-container">
-            <ReferLogo src={Eldhose} className="ref-logo" />
+            <ReferLogo src={process.env.PUBLIC_URL + "/img/people/Eldhose.png"} className="ref-logo" />
           </ReferLogoContainer>
           <ReferCenter>
             <CompanyName>Eldhose TJ</CompanyName>
@@ -182,7 +177,7 @@ const References = (props) => {
           className="ref-wrapper"
         >
           <ReferLogoContainer className="ref-container">
-            <ReferLogo src={Jackson} className="ref-logo" />
+            <ReferLogo src={process.env.PUBLIC_URL + "/img/people/Jackson.jpeg"} className="ref-logo" />
           </ReferLogoContainer>
           <ReferCenter>
             <CompanyName>Jackson EJ</CompanyName>
@@ -198,7 +193,7 @@ const References = (props) => {
           className="ref-wrapper"
         >
           <ReferLogoContainer className="ref-container">
-            <ReferLogo src={Aswathy} className="ref-logo" />
+            <ReferLogo src={process.env.PUBLIC_URL + "/img/people/Aswathy.png"} className="ref-logo" />
           </ReferLogoContainer>
           <ReferCenter>
             <CompanyName>Aswathy S Mohanan</CompanyName>

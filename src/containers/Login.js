@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { withRouter } from "react-router-dom";
 import styled from "styled-components";
-import me from "../img/bgimg/me.png";
-import location from "../img/icons/location.png";
-import SVLogo from "../img/icons/SVLogo.png";
-import scrollGif from "../img/icons/scrollGif.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -280,11 +276,11 @@ const Login = () => {
   return (
     <HomeContainer ref={myRef}>
       <ScrollButton onClick={() => window.scrollTo(0, 0)}>
-        <ScrollIcon atTop={atTop} src={scrollGif} />
+        <ScrollIcon atTop={atTop} src={process.env.PUBLIC_URL + "/img/icons/scrollGif.gif"} />
       </ScrollButton>
       <HeaderContainer>
         <Personal>
-          <PortfolioLogo src={SVLogo} />
+          <PortfolioLogo src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
         </Personal>
         <MenuBar scrollTo={(page) => scrollToSection(page)} />
       </HeaderContainer>
@@ -313,7 +309,7 @@ const Login = () => {
                 data-aos="fade-left"
                 data-aos-easing="ease-in-sine"
               >
-                <Location src={location}></Location>
+                <Location src={process.env.PUBLIC_URL + "/img/icons/location.png"}></Location>
                 <LocationName>Kochi</LocationName>
               </LocationContainer>{" "}
             </DescContainer>
@@ -323,7 +319,7 @@ const Login = () => {
                   onMouseEnter={() => setExpandResume(true)}
                   onMouseLeave={() => setExpandResume(false)}
                 >
-                  <ResumeIcon className="r-icon" src={SVLogo} />
+                  <ResumeIcon className="r-icon" src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
                   <ResumeTag expandResume={expandResume}>
                     Download Resume
                   </ResumeTag>
@@ -337,7 +333,7 @@ const Login = () => {
             data-aos="fade-left"
             data-aos-easing="ease-in-sine"
           >
-            <Background1 src={me} />
+            <Background1 src={process.env.PUBLIC_URL + "/img/bgimg/me.png"} />
           </Right>
         </Main>
       </HomeBody>

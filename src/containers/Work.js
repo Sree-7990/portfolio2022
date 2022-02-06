@@ -2,12 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Aos from "aos";
 
-/////////////////////////////////////////////////////////
-
-import tcs from "../img/icons/tcs.png";
-import freel from "../img/icons/freel.png";
-import keyvalue from "../img/icons/keyvalue.png";
-
 const Container = styled.div`
   width: 100%;
   padding-top: 50px;
@@ -141,7 +135,7 @@ const Work = (props) => {
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
         >
-          <WorkLogo src={tcs} />
+          <WorkLogo src={process.env.PUBLIC_URL + "/img/icons/tcs.png"} />
           <WorkCenter>
             <CompanyName>Tata Consultancy Services</CompanyName>
             <Role>Junior UI Engineer</Role>
@@ -155,7 +149,7 @@ const Work = (props) => {
           data-aos="fade-left"
           data-aos-easing="ease-in-sine"
         >
-          <WorkLogo style={{ height: 115 }} src={keyvalue} />
+          <WorkLogo style={{ height: 115 }} src={process.env.PUBLIC_URL + "/img/icons/keyvalue.png"} />
           <WorkCenter>
             <CompanyName>Keyvalue Software Systems</CompanyName>
             <Role>UI Engineer</Role>
@@ -172,7 +166,7 @@ const Work = (props) => {
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
         >
-          <WorkLogo style={{ height: 115 }} src={freel} />
+          <WorkLogo style={{ height: 115 }} src={process.env.PUBLIC_URL + "/img/icons/freel.png"} />
           <WorkCenter>
             <CompanyName>Freelance Projects</CompanyName>
             <WorkDesc>

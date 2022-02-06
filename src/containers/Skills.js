@@ -1,20 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import atom from "../img/icons/atom.png";
-import html_5 from "../img/icons/html_5.png";
-import css from "../img/icons/css.png";
-import science from "../img/icons/science.png";
-import typescript from "../img/icons/typescript.png";
-import js from "../img/icons/js.png";
-
-import photoshop from "../img/icons/photoshop.png";
-import illustrator from "../img/icons/illustrator.png";
-import xd from "../img/icons/xd.png";
-import premiere from "../img/icons/premiere.png";
-import indesign from "../img/icons/indesign.png";
-import figma from "../img/icons/figma.png";
-
 import Aos from "aos";
 import HSBar from "react-horizontal-stacked-bar-chart";
 
@@ -114,7 +100,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={atom}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/atom.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -149,7 +135,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={js}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/js.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -185,7 +171,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={html_5}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/html_5.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -219,7 +205,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={css}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/css.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -255,7 +241,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={typescript}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL +  "/img/icons/typescript.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -289,7 +275,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="flip-down">
-                  <SkillLogo src={science}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/science.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -330,7 +316,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={photoshop}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/photoshop.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -365,7 +351,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={illustrator}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/illustrator.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -401,7 +387,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={xd}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/xd.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -435,7 +421,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={premiere}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/premiere.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -471,7 +457,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={figma}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/figma.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"
@@ -505,7 +491,7 @@ const Skills = (props) => {
             <SkillBox>
               <SkillWrapper>
                 <SkillCenter data-aos-duration="2000" data-aos="fade-right">
-                  <SkillLogo src={indesign}></SkillLogo>
+                  <SkillLogo src={process.env.PUBLIC_URL + "/img/icons/indesign.png"}></SkillLogo>
                 </SkillCenter>
                 <SkillChart
                   data-aos-duration="500"

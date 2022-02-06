@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import grid from "../img/icons/grid.png";
 import { Animated } from "react-animated-css";
 
 const ComponentContainer = styled.div`
@@ -100,7 +99,7 @@ const MenuBar = (props) => {
   };
   return (
     <ComponentContainer>
-      <MenuButton onClick={() => setExpand(!expand)} src={grid}></MenuButton>
+      <MenuButton onClick={() => setExpand(!expand)} src={process.env.PUBLIC_URL + '/img/icons/grid.png'}></MenuButton>
       {expand && (
         <ExpandedMenu expanded={expand}>
           {menuList?.length > 0 &&

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Aos from "aos";
-import loc_pin from "../img/icons/loc_pin.png";
 
 const Container = styled.div`
   width: 100%;
@@ -173,7 +172,7 @@ const EduDetails = (props) => {
             <DescRow>
               <EduDesc>Central Board of Secondary Education</EduDesc>
               <Instituion>
-                <EduLocation src={loc_pin}></EduLocation>
+                <EduLocation src={process.env.PUBLIC_URL + "/img/icons/loc_pin.png"}></EduLocation>
                 <EduLocationValue>Sree Sabari Central School</EduLocationValue>
               </Instituion>
             </DescRow>
@@ -198,7 +197,7 @@ const EduDetails = (props) => {
             <DescRow>
               <EduDesc>Central Board of Secondary Education</EduDesc>
               <Instituion>
-                <EduLocation src={loc_pin}></EduLocation>
+                <EduLocation src={process.env.PUBLIC_URL + "/img/icons/loc_pin.png"}></EduLocation>
                 <EduLocationValue>Sree Sabari Central School</EduLocationValue>
               </Instituion>
             </DescRow>
@@ -223,7 +222,7 @@ const EduDetails = (props) => {
             <DescRow>
               <EduDesc>Kerala University</EduDesc>
               <Instituion>
-                <EduLocation src={loc_pin}></EduLocation>
+                <EduLocation src={process.env.PUBLIC_URL + "/img/icons/loc_pin.png"}></EduLocation>
                 <EduLocationValue>
                   Sree Buddha College of Engineering
                 </EduLocationValue>
