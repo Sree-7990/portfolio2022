@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./containers/Login";
 import { ThemeProvider } from "styled-components";
 import { Light } from "./themes.js";
-import styled from "styled-components";
 function App() {
 
   const [theme, setTheme] = useState(Light);
@@ -32,7 +31,7 @@ function App() {
   //   document.body.style.transform = "translate3d(0px, 0px, 0px)";
   // }
   return (
-    <ThemeProvider theme={Light}>
+    <ThemeProvider theme={theme}>
       <Router>
         <Switch>
           <Route path="/" exact={true} component={Login} />

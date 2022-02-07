@@ -52,8 +52,7 @@ const Others = (props) => {
       <SessionHeader data-aos-duration="2000" data-aos="flip-down">
         When Not Working
       </SessionHeader>
-      <Main>                                 
-      </Main>
+      <Main />
     </Container>
   );
 };
