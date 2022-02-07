@@ -5,18 +5,9 @@ import Login from "./containers/Login";
 import { ThemeProvider } from "styled-components";
 import { Light } from "./themes.js";
 import styled from "styled-components";
-
-const Container = styled.div`
-  max-width: 100vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
-`;
 function App() {
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(Light);
   // var pageHeight = window.innerHeight;
 
   // document.addEventListener("scroll", function () {

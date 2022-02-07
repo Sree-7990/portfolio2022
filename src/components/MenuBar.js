@@ -92,7 +92,7 @@ const MenuBar = (props) => {
 
   useEffect(() => {
     setMenuList(menuItems);
-  }, []);
+  }, [menuItems]);
   const menuItemClick = (item) => {
     setSelected(item);
     console.log("selecting : ", item);

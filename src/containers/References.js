@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Aos from "aos";
 
 
 const Container = styled.div`
@@ -48,17 +47,6 @@ const SessionHeader = styled.div`
   }
 `;
 
-const ReferContainer = styled.div`
-  width: 100%;
-`;
-
-const ReferWrapper = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-`;
-
 const ReferLogoContainer = styled.div`
   width: 150px;
   height: 150px;
@@ -87,12 +75,6 @@ const CompanyName = styled.div`
   font-size: 14px;
 `;
 
-const ReferDesc = styled.div`
-  font-family: "Kanit", sans-serif;
-  color: ${(props) => props.theme.secondary};
-  font-size: 14px;
-  white-space: wrap;
-`;
 
 const Mail = styled.div`
   font-family: "Kanit", sans-serif;
@@ -108,10 +90,6 @@ const Phone = styled.div`
   font-size: 14px;
 `;
 
-const Bold = styled.div`
-  font-weight: bold;
-  font-family: "Kanit", sans-serif;
-`;
 
 const Role = styled.div`
   font-family: "Kanit", sans-serif;
@@ -143,8 +121,6 @@ const ReferRowRight = styled.div`
     align-self: center;
   }
 `;
-
-const DescLines = styled.div``;
 
 const References = (props) => {
   return (

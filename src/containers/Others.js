@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Aos from "aos";
 
 const Container = styled.div`
   width: 100%;
@@ -46,89 +45,6 @@ const SessionHeader = styled.div`
     margin: 30px auto;
   }
 `;
-
-const OtherContainer = styled.div`
-  width: 100%;
-`;
-
-const OtherWrapper = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-`;
-
-const OtherChart = styled.div``;
-
-const OtherLogo = styled.img`
-  width: 150px;
-  padding-right: 30px;
-  border-right: 2px solid #7580a3;
-  align-self: center;
-`;
-
-const CompanyName = styled.div`
-  font-family: "Kanit", sans-serif;
-  color: ${(props) => props.theme.primary};
-  font-size: 14px;
-`;
-
-const OtherDesc = styled.div`
-  font-family: "Kanit", sans-serif;
-  color: ${(props) => props.theme.secondary};
-  font-size: 14px;
-  white-space: wrap;
-`;
-
-const Duration = styled.div`
-  font-family: "Kanit", sans-serif;
-  color: ${(props) => props.theme.secondary};
-  font-size: 14px;
-`;
-
-const Bold = styled.div`
-  font-weight: bold;
-  font-family: "Kanit", sans-serif;
-`;
-
-const Role = styled.div`
-  font-family: "Kanit", sans-serif;
-  color: #327a43;
-  font-size: 14px;
-`;
-
-const OtherCenter = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  margin-left: 30px;
-  justify-content: center;
-`;
-
-const OtherRow = styled.div`
-  width: max-content;
-  display: flex;
-  margin: 20px 0;
-`;
-
-const OtherRowRight = styled.div`
-  width: max-content;
-  display: flex;
-  margin: 20px 0;
-  align-self: flex-end;
-  @media (max-width: 655px) {
-    margin: 30px auto;
-    align-self: center;
-  }
-`;
-
-const DescLines = styled.div``;
-
-const dataMock = [
-  { title: "One", value: 10, color: "#E38627" },
-  { title: "Two", value: 15, color: "#C13C37" },
-  { title: "Three", value: 20, color: "#6A2135" },
-];
 
 const Others = (props) => {
   return (
