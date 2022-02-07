@@ -193,7 +193,7 @@ const RButtonContainer = styled.div``;
 const ResumeButton = styled.div`
   width: 175px;
   height: 40px;
-  z-index: 10;
+  z-index:10;
   border-radius: 50px;
   cursor: pointer;
   background-color: #fff;
@@ -276,16 +276,11 @@ const Login = () => {
   return (
     <HomeContainer ref={myRef}>
       <ScrollButton onClick={() => window.scrollTo(0, 0)}>
-        <ScrollIcon
-          atTop={atTop}
-          src={process.env.PUBLIC_URL + "/img/icons/scrollGif.gif"}
-        />
+        <ScrollIcon atTop={atTop} src={process.env.PUBLIC_URL + "/img/icons/scrollGif.gif"} />
       </ScrollButton>
       <HeaderContainer>
         <Personal>
-          <PortfolioLogo
-            src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"}
-          />
+          <PortfolioLogo src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
         </Personal>
         <MenuBar scrollTo={(page) => scrollToSection(page)} />
       </HeaderContainer>
@@ -314,28 +309,23 @@ const Login = () => {
                 data-aos="fade-left"
                 data-aos-easing="ease-in-sine"
               >
-                <Location
-                  src={process.env.PUBLIC_URL + "/img/icons/location.png"}
-                ></Location>
+                <Location src={process.env.PUBLIC_URL + "/img/icons/location.png"}></Location>
                 <LocationName>Kochi</LocationName>
               </LocationContainer>{" "}
             </DescContainer>
             <RButtonContainer className="r-container">
               <a href="/resume.pdf" target="_blank">
                 <>
-                  <ResumeButton
-                    onMouseEnter={() => setExpandResume(true)}
-                    onMouseLeave={() => setExpandResume(false)}
-                  >
-                    <ResumeIcon
-                      className="r-icon"
-                      src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"}
-                    />
-                    <ResumeTag expandResume={expandResume}>
-                      Download Resume
-                    </ResumeTag>
-                  </ResumeButton>
-                </>{" "}
+                <ResumeButton
+                  onMouseEnter={() => setExpandResume(true)}
+                  onMouseLeave={() => setExpandResume(false)}
+                >
+                  <ResumeIcon className="r-icon" src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
+                  <ResumeTag expandResume={expandResume}>
+                    Download Resume
+                  </ResumeTag>
+                </ResumeButton>{" "}
+                </>
               </a>
             </RButtonContainer>
           </Left>
