@@ -5,7 +5,7 @@ import { Animated } from "react-animated-css";
 const ComponentContainer = styled.div`
   min-width: 400px;
   width: 26%;
-  margin-right: 60px;
+  margin-right: 45px;
   height: max-content;
 
   @media (max-width: 655px) {

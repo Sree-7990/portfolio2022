@@ -69,6 +69,7 @@ const WorkLogo = styled.img`
   @media (max-width: 655px) {
     width: 100px;
     height: unset !important;
+    padding-right: 15px;
   }
 `;
 

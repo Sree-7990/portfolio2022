@@ -51,6 +51,9 @@ const Background1 = styled.img`
 
 const PortfolioLogo = styled.img`
   width: 80px;
+  @media (max-width: 655px) {
+    width: 60px;
+  }
 `;
 
 const Title = styled.div`
@@ -103,6 +106,9 @@ const Personal = styled.div`
   font-size: 14px;
   margin: 13px 20px;
   color: gray;
+  @media (max-width: 655px) {
+    margin: 13px 13px;
+  }
 `;
 
 const Intro = styled.span`
@@ -315,7 +321,7 @@ const Login = () => {
               </LocationContainer>{" "}
             </DescContainer>
             <RButtonContainer className="r-container">
-              <a href="/resume.pdf" target="_blank">
+              <a href={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank">
                 <>
                 <ResumeButton
                   onMouseEnter={() => setExpandResume(true)}
