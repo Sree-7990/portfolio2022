@@ -119,7 +119,7 @@ const EduLocation = styled.img`
   height: 10px;
 
   @media (max-width: 575px) {
-    margin-right: 5px;
+    margin-top: 5px;
   }
 `;
 
@@ -135,7 +135,11 @@ const EduLocationValue = styled.div`
 const Instituion = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  @media (max-width: 655px) {
+    max-width: 120px;
+
+  }
 `;
 
 const Marks = styled.span`
@@ -223,7 +227,7 @@ const EduDetails = (props) => {
               <Instituion>
                 <EduLocation src={process.env.PUBLIC_URL + "/img/icons/loc_pin.png"}></EduLocation>
                 <EduLocationValue>
-                  Sree Buddha College of Engineering
+                  Sree Buddha, Pattoor
                 </EduLocationValue>
               </Instituion>
             </DescRow>

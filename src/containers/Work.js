@@ -65,6 +65,11 @@ const WorkLogo = styled.img`
   padding-right: 30px;
   border-right: 2px solid #7580a3;
   align-self: center;
+  
+  @media (max-width: 655px) {
+    width: 100px;
+    height: unset !important;
+  }
 `;
 
 const CompanyName = styled.div`
@@ -109,6 +114,9 @@ const WorkRow = styled.div`
   width: max-content;
   display: flex;
   margin: 20px 0;
+  @media (max-width: 655px) {
+    max-width: 50vh;
+  }
 `;
 
 
@@ -120,6 +128,7 @@ const WorkRowRight = styled.div`
   @media (max-width: 655px) {
     margin: 30px auto;
     align-self: center;
+    max-width: 50vh;
   }
 `;
 

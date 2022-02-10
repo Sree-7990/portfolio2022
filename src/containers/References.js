@@ -58,21 +58,30 @@ const ReferLogoContainer = styled.div`
   border: 3px solid #36abab;
   border-right-color: #edecec;
   border-top-color: #edecec;
-  transition: all 2s;
+  transition: all 2s;  
+  @media (max-width: 655px) {
+    width: 100px;
+    height: 100px;
+    }
 `;
 
 const ReferLogo = styled.img`
   width: 90px;
   border-radius: 150px;
   align-self: center;
-
   transition: all 2s;
+  
+  @media (max-width: 655px) {
+  width: 60px;
+  }
 `;
 
 const CompanyName = styled.div`
   font-family: "Kanit", sans-serif;
   color: ${(props) => props.theme.primary};
   font-size: 14px;
+  white-spaces: wrap;
+  width: unset;
 `;
 
 
@@ -103,6 +112,11 @@ const ReferCenter = styled.div`
   margin-right: 20px;
   margin-left: 10px;
   justify-content: center;
+  
+  @media (max-width: 655px) {
+    max-width: 30vh;
+    padding: right: 5px;
+  }
 `;
 
 const ReferRow = styled.div`

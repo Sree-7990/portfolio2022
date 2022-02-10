@@ -32,7 +32,7 @@ function App() {
   // }
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router  basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact={true} component={Login} />
           <Route>404 Error</Route>

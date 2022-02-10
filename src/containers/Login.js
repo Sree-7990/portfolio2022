@@ -45,6 +45,7 @@ const Background1 = styled.img`
   @media (max-width: 955px) {
   }
   @media (max-width: 655px) {
+    min-width: 350px;
   }
 `;
 
