@@ -24,6 +24,7 @@ const Main = styled.div`
   padding: 116px 0;
   max-width: 955px;
   padding: 0 41px;
+  overflow-x: hidden;
   margin: 0 auto;
   // background-color: red;
 `;
@@ -65,9 +66,9 @@ const WorkLogo = styled.img`
   padding-right: 30px;
   border-right: 2px solid #7580a3;
   align-self: center;
-  
+
   @media (max-width: 655px) {
-    width: 100px;
+    width: 80px;
     height: unset !important;
     padding-right: 15px;
   }
@@ -109,6 +110,12 @@ const WorkCenter = styled.div`
   margin-right: 20px;
   margin-left: 30px;
   justify-content: center;
+  white-spaces: break;
+  @media (max-width: 655px) {
+    white-space: break-spaces;
+    overflow: hidden;
+    max-width: 205px;
+  }
 `;
 
 const WorkRow = styled.div`
@@ -116,29 +123,37 @@ const WorkRow = styled.div`
   display: flex;
   margin: 20px 0;
   @media (max-width: 655px) {
-    max-width: 50vh;
+    max-width: 40vh;
   }
 `;
-
 
 const WorkRowRight = styled.div`
   width: max-content;
   display: flex;
   margin: 20px 0;
   align-self: flex-end;
+  margin-right: -40px;
   @media (max-width: 655px) {
     margin: 30px auto;
     align-self: center;
     max-width: 50vh;
+    margin-right: 0px;
   }
 `;
 
-const DescLines = styled.div``;
+const DescLines = styled.div`
+  white-spaces: break;
+  @media (max-width: 655px) {
+    max-width: 50vh;
+  }
+`;
 
 const Work = (props) => {
   return (
     <Container ref={props.workRef}>
-      <SessionHeader data-aos-duration="2000" data-aos="flip-down">Work Experiences</SessionHeader>
+      <SessionHeader data-aos-duration="2000" data-aos="flip-down">
+        Work Experiences
+      </SessionHeader>
       <Main>
         <WorkRow
           data-aos-duration="1000"
@@ -154,18 +169,22 @@ const Work = (props) => {
           </WorkCenter>
         </WorkRow>
         <WorkRowRight
-          style={{ marginRight: -40 }}
           data-aos-duration="1000"
           data-aos="fade-left"
           data-aos-easing="ease-in-sine"
         >
-          <WorkLogo style={{ height: 115 }} src={process.env.PUBLIC_URL + "/img/icons/keyvalue.png"} />
+          <WorkLogo
+            style={{ height: 115 }}
+            src={process.env.PUBLIC_URL + "/img/icons/keyvalue.png"}
+          />
           <WorkCenter>
             <CompanyName>Keyvalue Software Systems</CompanyName>
             <Role>UI Engineer</Role>
             <Duration>2019 - 2022</Duration>
             <WorkDesc>
-              <DescLines>- Banking Mobile App development (React Native)</DescLines>
+              <DescLines>
+                - Banking Mobile App development (React Native)
+              </DescLines>
               <DescLines>- E-commerce Web App (ReactJS)</DescLines>
               <DescLines>- Community Web App (React and TS)</DescLines>
             </WorkDesc>
@@ -176,12 +195,17 @@ const Work = (props) => {
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
         >
-          <WorkLogo style={{ height: 115 }} src={process.env.PUBLIC_URL + "/img/icons/freel.png"} />
+          <WorkLogo
+            style={{ height: 115 }}
+            src={process.env.PUBLIC_URL + "/img/icons/freel.png"}
+          />
           <WorkCenter>
             <CompanyName>Freelance Projects</CompanyName>
             <WorkDesc>
               <DescLines>- Converting existing pages responsive</DescLines>
-              <DescLines>- Designing and delivering responsive custom components</DescLines>
+              <DescLines>
+                - Designing and delivering responsive custom components
+              </DescLines>
               <DescLines>- UX component designs</DescLines>
               <DescLines>- Branding Works, Events Designs</DescLines>
             </WorkDesc>

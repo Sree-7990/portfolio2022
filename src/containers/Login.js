@@ -69,6 +69,7 @@ const Title = styled.div`
   @media (max-width: 655px) {
     align-items: flex-start;
     display: grid;
+    font-size: 3.6rem;
   }
 `;
 
@@ -84,6 +85,7 @@ const Name = styled.div`
   }
   @media (max-width: 655px) {
     margin-top: -30px;
+    font-size: 3.6rem;
   }
 `;
 
@@ -123,7 +125,7 @@ const Intro = styled.span`
 const Location = styled.img`
   width: 15px;
   margin-left: 25px;
-  height: max-content;
+  height: 15px;
 `;
 
 const LocationName = styled.span`
@@ -166,6 +168,7 @@ const Left = styled.div`
   align-items: flex-end;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden
   @media (max-width: 955px) {
     align-items: center;
     justify-self: center;
@@ -177,6 +180,7 @@ const Left = styled.div`
 
   @media (max-width: 655px) {
     display: grid;
+    overflow-x: hidden
   }
 `;
 const Right = styled.div`
@@ -193,6 +197,7 @@ const Right = styled.div`
   @media (max-width: 655px) {
     width: 100%;
     margin-left: 0px;
+    overflow-x: hidden
   }
 `;
 const RButtonContainer = styled.div``;
@@ -200,7 +205,7 @@ const RButtonContainer = styled.div``;
 const ResumeButton = styled.div`
   width: 175px;
   height: 40px;
-  z-index:10;
+  z-index: 10;
   border-radius: 50px;
   cursor: pointer;
   background-color: #fff;
@@ -265,7 +270,12 @@ const Login = () => {
     };
   }, []);
 
+  const handleNavigation = (e) => {
+    setTimer(true);
+  };
+
   const [expandResume, setExpandResume] = useState(false);
+  const [timer, setTimer] = useState(false);
   const [atTop, setAtTop] = useState(true);
   const myRef = useRef(null);
   const eduRef = useRef(null);
@@ -281,13 +291,18 @@ const Login = () => {
   };
 
   return (
-    <HomeContainer ref={myRef}>
+    <HomeContainer ref={myRef} timer={timer}>
       <ScrollButton onClick={() => window.scrollTo(0, 0)}>
-        <ScrollIcon atTop={atTop} src={process.env.PUBLIC_URL + "/img/icons/scrollGif.gif"} />
+        <ScrollIcon
+          atTop={atTop}
+          src={process.env.PUBLIC_URL + "/img/icons/scrollGif.gif"}
+        />
       </ScrollButton>
       <HeaderContainer>
         <Personal>
-          <PortfolioLogo src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
+          <PortfolioLogo
+            src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"}
+          />
         </Personal>
         <MenuBar scrollTo={(page) => scrollToSection(page)} />
       </HeaderContainer>
@@ -316,22 +331,27 @@ const Login = () => {
                 data-aos="fade-left"
                 data-aos-easing="ease-in-sine"
               >
-                <Location src={process.env.PUBLIC_URL + "/img/icons/location.png"}></Location>
+                <Location
+                  src={process.env.PUBLIC_URL + "/img/icons/location.png"}
+                ></Location>
                 <LocationName>Kochi</LocationName>
               </LocationContainer>{" "}
             </DescContainer>
             <RButtonContainer className="r-container">
               <a href={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank">
                 <>
-                <ResumeButton
-                  onMouseEnter={() => setExpandResume(true)}
-                  onMouseLeave={() => setExpandResume(false)}
-                >
-                  <ResumeIcon className="r-icon" src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"} />
-                  <ResumeTag expandResume={expandResume}>
-                    Download Resume
-                  </ResumeTag>
-                </ResumeButton>{" "}
+                  <ResumeButton
+                    onMouseEnter={() => setExpandResume(true)}
+                    onMouseLeave={() => setExpandResume(false)}
+                  >
+                    <ResumeIcon
+                      className="r-icon"
+                      src={process.env.PUBLIC_URL + "/img/icons/SVLogo.png"}
+                    />
+                    <ResumeTag expandResume={expandResume}>
+                      Download Resume
+                    </ResumeTag>
+                  </ResumeButton>{" "}
                 </>
               </a>
             </RButtonContainer>
