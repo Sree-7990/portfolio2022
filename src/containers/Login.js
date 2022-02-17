@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { keyframes } from 'styled-components'
 import { withRouter } from "react-router-dom";
 import styled from "styled-components";
 import Aos from "aos";
@@ -10,6 +11,13 @@ import Skills from "./Skills";
 import Work from "./Work";
 import References from "./References";
 import Others from "./Others";
+
+const slide = keyframes` 0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+50%  {background-color:blue; left:200px; top:200px;}
+75%  {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+`
 
 const HomeContainer = styled.div`
   background-size: fill;
@@ -62,6 +70,7 @@ const Title = styled.div`
   height: max-content;
   display: flex;
   font-size: 4rem;
+  animation-name: slide;
   color: ${(props) => props.theme.primary};
   @media (max-width: 955px) {
     width: max-content;

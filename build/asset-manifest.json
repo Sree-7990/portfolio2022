@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portfolio2022/static/css/main.6a6161d7.css",
+    "main.js": "/portfolio2022/static/js/main.bfe82bcf.js",
+    "index.html": "/portfolio2022/index.html",
+    "main.6a6161d7.css.map": "/portfolio2022/static/css/main.6a6161d7.css.map",
+    "main.bfe82bcf.js.map": "/portfolio2022/static/js/main.bfe82bcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a6161d7.css",
+    "static/js/main.bfe82bcf.js"
+  ]
+}
